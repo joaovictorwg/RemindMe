@@ -1,0 +1,29 @@
+POST http://localhost:3333/cards
+Content-type: application/json
+
+{
+    "title": "Card node",
+    "description": "descrição",
+    "deadline": "07/07/2004"
+}
+
+###
+
+GET http://localhost:3333/cards?search=01
+
+###
+
+PUT http://localhost:3333/cards/02580928-bf71-49bc-9a65-4714621383db
+Content-type: application/json
+
+{
+    "title": "Card 02",
+    "description": "descrição",
+    "deadline": "07/07/2004"
+}
+
+###
+
+DELETE http://localhost:3333/cards/02580928-bf71-49bc-9a65-4714621383db
+Content-type: application/json
+
